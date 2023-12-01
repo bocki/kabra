@@ -1,0 +1,26 @@
+---
+import ClippedImage from '../components/ClippedImage.astro';
+import NavBar from '../components/NavBar.astro';
+
+const { image = "/src/assets/ka_gross.jpg", imageAlt = "Katherina 👾" } = Astro.props;
+---
+
+<html lang="de-AT">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content="Die Autorin Katherina Braschel rockt die Bude." />
+		<title>Astro</title>
+	</head>
+	<body>
+		<NavBar />
+        <div class="mx-auto max-w-7xl py-12 lg:py-32">
+            <div class="mx-auto lg:mx-0 lg:max-w-xl px-6 lg:px-8 lg:pr-0">
+                <slot />
+            </div>
+        </div>
+        <ClippedImage imagePath={image} altText={imageAlt} />
+	</body>
+</html>

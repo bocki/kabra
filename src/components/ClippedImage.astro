@@ -1,0 +1,15 @@
+---
+import { Image } from 'astro:assets';
+
+interface Props {
+   imagePath: string;
+   altText: string;
+}
+
+const { imagePath, altText } = Astro.props;
+const images = import.meta.glob('/src/assets/*.{jpeg,jpg,png,gif}')
+---
+
+<div class="z-10 lg:w-full lg:max-w-2xl">
+    <Image src={images[imagePath]()} alt={altText} class="lg:max-h-max lg:clip-poly lg:absolute lg:right-0 lg:inset-y-0 object-cover lg:h-screen lg:w-1/2" />
+</div>

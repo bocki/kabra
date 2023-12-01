@@ -1,0 +1,52 @@
+---
+
+---
+<header class="lg:absolute inset-x-0 top-0 z-50">
+    <div class="mx-auto max-w-7xl">
+        <div class="px-6 pt-6 lg:max-w-3xl lg:pl-8 lg:pr-0">
+            <!-- Start of Navbar -->
+            <nav x-cloak class="flex flex-col lg:flex-row lg:items-center justify-between lg:justify-start bg-white" aria-label="Global" x-data="{ open: false }">
+                <div class="flex items-end lg:block">
+                    <a href="/" class="lg:-m-1.5 lg:p-1.5 lg:w-fit text-lg w-full">
+                        Katherina Braschel
+                    </a>
+                    <div class="block lg:hidden">
+                        <button x-on:click="open = ! open" type="button" id="navbar-toggle">
+                            <svg class="w-5 h-5 text-gray-900" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"> <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /> </svg>
+                        </button>
+                    </div>
+                </div>
+                <div x-show="open" class="lg:ml-10 lg:!flex flex-col lg:flex-row lg:gap-x-12" x-transition:enter="transition ease-out duration-100 transform" x-transition:enter-start="opacity-0 translate-y-[-10%]" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-100 transform" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-[-10%]">
+                    <a href="/" class="text-sm block font-semibold leading-6 text-gray-900">Termine</a>
+                    <div class="dropdown group" x-data="{ open: false }" x-on:mouseover.debounce.away = "open = false">
+                        <button x-on:click="open = ! open" x-on:mouseover.debounce="open = true" class="dropdown-button text-sm flex items-center justify-between font-semibold leading-6 w-fit text-gray-900">
+                            Schreiben
+                            <svg class="w-2.5 h-2.5 ms-2.5 inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6"> <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" /> </svg>
+                        </button>
+                        <div x-show="open" class="dropdown-menu lg:group-hover:block lg:absolute pl-2 lg:pl-0 lg:py-4 lg:pr-4" x-transition>
+                                <a href="/" class="text-sm block font-semibold leading-6 text-gray-900 hover:bg-gray-900 hover:text-white lg:p-2">Menü 1</a>
+                                <a href="/" class="text-sm block font-semibold leading-6 text-gray-900 hover:bg-gray-900 hover:text-white lg:p-2">Menü 2</a>
+                        </div>
+                    </div>
+                    <a href="/" class="text-sm block font-semibold leading-6 text-gray-900">Vermitteln</a>
+                    <div class="dropdown group" x-data="{ open: false }" x-on:mouseover.debounce.away = "open = false">
+                        <button x-on:mouseover.debounce="open = true" x-on:click="open = ! open" class="dropdown-button text-sm flex items-center justify-between font-semibold leading-6 w-fit text-gray-900">
+                            Biografie
+                            <svg class="w-2.5 h-2.5 ms-2.5 inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6"> <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" /> </svg>
+                        </button>
+                        <div x-show="open" class="dropdown-menu lg:group-hover:block lg:absolute pl-2 lg:pl-0 lg:py-4 lg:pr-4" x-transition>
+                                <a href="/" class="text-sm block font-semibold leading-6 text-gray-900 hover:bg-gray-900 hover:text-white lg:p-2">Preise</a>
+                                <a href="/" class="text-sm block font-semibold leading-6 text-gray-900 hover:bg-gray-900 hover:text-white lg:p-2">Noch mehr Preise!</a>
+                        </div>
+                    </div>
+                    <a href="/" class="text-sm block font-semibold leading-6 text-gray-900">Kontakt</a>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+</header>
+
+<style>
+    [x-cloak] { display: none !important; }
+</style>
