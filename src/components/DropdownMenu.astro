@@ -7,7 +7,7 @@ const { title } = Astro.props;
         {title}
         <svg class="w-2.5 h-2.5 ms-2.5 inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6"> <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" /> </svg>
     </button>
-    <div x-show="open" class="dropdown-menu lg:group-hover:block lg:absolute lg:mt-0.5 pl-2 lg:bg-white lg:pl-0 lg:w-40 lg:border border-gray-900" x-transition>
+    <div x-show="open" class="dropdown-menu lg:group-hover:block lg:absolute pl-2 lg:bg-white lg:pl-0 lg:w-40 lg:border border-gray-900" x-transition>
         <slot />
     </div>
 </div>
