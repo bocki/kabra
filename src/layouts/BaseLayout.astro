@@ -1,8 +1,15 @@
 ---
 import ClippedImage from '../components/ClippedImage.astro';
 import NavBar from '../components/NavBar.astro';
+import { ViewTransitions } from 'astro:transitions';
 
-const { image = "/src/assets/ka_gross.jpg", imageAlt = "Katherina 👾" } = Astro.props;
+const {
+	title = "Katherina Braschel",
+	description = "Website der Schriftstellerin Katherina Braschel",
+	image = "/src/assets/ka_gross.jpg", 
+	imageAlt = "Porträt von Katherina Braschel", 
+	copyright="Leonhard Pill" 
+} = Astro.props;
 ---
 
 <html lang="de-AT">
@@ -11,8 +18,9 @@ const { image = "/src/assets/ka_gross.jpg", imageAlt = "Katherina 👾" } = Astr
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<meta name="description" content="Die Autorin Katherina Braschel rockt die Bude." />
-		<title>Astro</title>
+		<meta name="description" content={description} />
+		<ViewTransitions />
+		<title>{title}</title>
 	</head>
 	<body>
 		<NavBar />
@@ -21,6 +29,7 @@ const { image = "/src/assets/ka_gross.jpg", imageAlt = "Katherina 👾" } = Astr
                 <slot />
             </div>
         </div>
-        <ClippedImage imagePath={image} altText={imageAlt} />
+        <ClippedImage imagePath={image} altText={imageAlt} copyright={copyright} />
 	</body>
+	<!-- 👾👾👾 -->
 </html>
