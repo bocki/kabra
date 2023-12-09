@@ -1,12 +1,12 @@
 ---
 import { Picture } from 'astro:assets';
 
-const { imagePath, altText } = Astro.props;
+const { imagePath, altText, copyright } = Astro.props;
 const images = import.meta.glob('/src/assets/*.{jpeg,jpg,png,gif}');
 const width = (await images[imagePath]()).default.width;
 ---
 
-<div class="z-10 lg:w-full lg:max-w-2xl">
+<div class="relative lg:static z-10 lg:w-full lg:max-w-2xl">
     <Picture 
         src={images[imagePath]()} 
         formats={['avif', 'webp']} 
@@ -15,4 +15,5 @@ const width = (await images[imagePath]()).default.width;
         alt={altText} 
         class="lg:max-h-max lg:clip-poly lg:absolute lg:right-0 lg:inset-y-0 object-cover lg:h-screen lg:w-1/2" 
     />
+    <div class="absolute mr-0.5 right-0 bottom-0 text-gray-500/50 text-[0.5em]">&copy; {copyright}</div>
 </div>
