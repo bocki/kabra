@@ -14,6 +14,7 @@ const width = (await images[imagePath]()).default.width;
         sizes={`(max-width: 640px) 240px, (max-width: 768px) 540px, (max-width: 800px) 720px, ${width}px`}
         alt={altText} 
         class="lg:max-h-max lg:clip-poly lg:absolute lg:right-0 lg:inset-y-0 object-cover lg:h-screen lg:w-1/2" 
+        loading="eager"
     />
     <div class="absolute mr-0.5 right-0 bottom-0 text-gray-500/50 text-[0.5em]">&copy; {copyright}</div>
 </div>
