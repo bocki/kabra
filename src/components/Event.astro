@@ -1,0 +1,44 @@
+---
+interface Props {
+  title: string;
+  date: string;
+  description?: string;
+  location?: string;
+  link?: string;
+}
+
+const { title, date, description, location, link } = Astro.props;
+
+// Format the date nicely
+const formatDate = (dateString: string) => {
+  const date = new Date(dateString);
+  return date.toLocaleDateString('de-AT', {
+    timeZone: 'UTC',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  });
+};
+
+const formatTime = (dateString: string) => {
+  const date = new Date(dateString);
+  return date.toLocaleTimeString('de-AT', {
+    timeZone: 'UTC', // this is probably a bad idea.
+    hour: 'numeric',
+    minute: '2-digit',
+  }).replace(/([\d]*):([\d]*)/, '$1.$2 Uhr');
+};
+---
+
+<li class="flex gap-x-6 justify-start w-full text-lg pb-6">
+    <span class="w-40 flex-none">
+      {formatDate(date)}
+      {formatTime(date) != "0.00 Uhr" && <span><br>{formatTime(date)</span>}
+    </span>
+    <span>
+        <span class="font-bold">{title}</span><br>
+        {description && <span>{description}<br><br></span>}
+        {location && <span>{location}<br></span>}
+        {link && <span><a class="font-semibold leading-6 text-gray-900" href={link}>Mehr Informationen <span aria-hidden="true">→</span></a></span> }
+    </span>
+</li>
