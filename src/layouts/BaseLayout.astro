@@ -1,7 +1,7 @@
 ---
 import ClippedImage from '../components/ClippedImage.astro';
 import NavBar from '../components/NavBar.astro';
-import { ViewTransitions } from 'astro:transitions';
+import { ClientRouter } from 'astro:transitions';
 
 const {
 	title = "Katherina Braschel",
@@ -18,7 +18,7 @@ const {
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<meta name="description" content={description} />
-		<ViewTransitions />
+		<ClientRouter />
 		<title>{title}</title>
 	</head>
 	<body>
