@@ -8,8 +8,11 @@ const {
 	description = "Website der Schriftstellerin Katherina Braschel",
 	image = "/src/assets/ka_gross.jpg", 
 	imageAlt = "Porträt von Katherina Braschel", 
-	copyright="Leonhard Pill" 
+	copyright="Leonhard Pill",
+	maxWidth = "lg:max-w-xl"
 } = Astro.props;
+
+// "lg:!max-w-[40.5rem]"
 ---
 
 <html lang="de-AT">
@@ -24,7 +27,7 @@ const {
 	<body>
 		<NavBar />
         <div class="mx-auto max-w-7xl py-12 lg:py-32">
-            <div class="mx-auto lg:mx-0 lg:max-w-xl px-6 lg:px-8 lg:pr-0">
+            <div class={`mx-auto lg:mx-0 ${maxWidth} px-6 lg:px-8 lg:pr-0`}>
                 <slot />
             </div>
         </div>
