@@ -5,9 +5,11 @@ interface Props {
   description?: string;
   location?: string;
   link?: string;
+  displaydate?: string;
+  displaytime?: string;
 }
 
-const { title, date, description, location, link } = Astro.props;
+const { title, date, description, location, link, displaydate, displaytime } = Astro.props;
 
 // Format the date nicely
 const formatDate = (dateString: string) => {
@@ -32,8 +34,8 @@ const formatTime = (dateString: string) => {
 
 <li class="flex gap-x-6 justify-start w-full text-lg pb-6">
     <span class="w-40 flex-none">
-      {formatDate(date)}
-      {formatTime(date) != "0.00 Uhr" && <span><br>{formatTime(date)</span>}
+      {displaydate || formatDate(date)}
+      {displaytime ? <span><br>{displaytime}</span> : (formatTime(date) != "0.00 Uhr" && <span><br>{formatTime(date)}</span>) }
     </span>
     <span>
         <span class="font-bold">{title}</span><br>
