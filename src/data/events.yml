@@ -15,28 +15,34 @@
   location: Literaturhaus Salzburg
 
 - title: Lesung aus „Heim holen“
+  date: 2026-04-24T00:00:00
+  displaytime: (Uhrzeit folgt)
+  location: Kurdirektion Bad Ischl
+
+- title: Lesung aus „Heim holen“
   date: 2026-04-09T00:00:00
-  displaydate: 9.-11. April 2026
-  displaytime: (genaueres Datum folgt)
+  displaytime: (Uhrzeit folgt)
   location: Prosafestival Innsbruck
 
 - title: Live-Interview mit LiteRadio
   date: 2026-03-21T12:00:00
   location: Stand E209, Halle 4, Leipziger Buchmesse
+  link: https://www.leipziger-buchmesse.de/aussteller-produkte/aussteller/buchmesse/literadio/5404
 
 - title: Lesung aus „Heim holen“
   date: 2026-03-21T15:00:00
   location: Donaubühne, Halle 4, Leipziger Buchmesse
+  link: https://www.leipziger-buchmesse.de/pco/de/buchmesse/6985a40791e1facf9a0f9312
 
-- title: Lesung aus „Heim holen“
-  date: 2026-03-19T00:00:00
-  displaydate: vsl. 19. März 2026
-  displaytime: tba
+- title: Gespräch über „Heim holen“
+  date: 2026-03-19T22:00:00
   location: Moritzbastei Leipzig
+  link: https://www.leipziger-buchmesse.de/pco/de/buchmesse/698221ab5ef4bb40ee07fea7
 
 - title: Lesung aus „Heim holen“
   date: 2026-03-10T19:00:00
   location: Literaturhaus Graz
+  link: https://www.literaturhaus-graz.at/veranstaltung/debuetromane-braschel-maschik/
 
 - title: Lesung aus „Heim holen“
   date: 2026-02-17T18:30:00
