@@ -7,31 +7,61 @@
   location: AnnoLiteraturSonntag, Wien
 
 - title: Lesung aus „Heim holen“
+  date: 2026-10-21T19:00:00
+  location: Stadtbücherei Gmunden
+
+- title: Lesung aus „Heim holen“
+  date: 2026-10-19T19:00:00
+  location: Ö1 Radiophone Werkstatt, Alte Schmiede, Wien
+  description: Lesung und Gespräch gemeinsam mit Katharina Menhofer
+
+- title: Lesung aus „Heim holen“
   date: 2026-10-16T18:00:00
   location: Haus der Donauschwaben, Salzburg
 
 - title: Lesung aus „Heim holen“
   date: 2026-10-06T19:00:00
   location: Literaturhaus am Inn
+  link: https://www.literaturhaus-am-inn.at/katherina-braschel-miriam-unterthiner/
+
+- title: Lesung aus „Heim holen“
+  date: 2026-09-30T00:00:00
+  displaytime: (Uhrzeit folgt)
+  location: Crespo Haus, Frankfurt
 
 - title: Lesung aus „Heim holen“, gemeinsam mit Vladimir Vertlib
   date: 2026-09-24T19:30:00
   location: Stifterhaus Linz
 
 - title: Lesung aus „Heim holen“
-  date: 2026-09-19T00:00:00
-  displaytime: (Uhrzeit folgt)
-  location: Septemberlese Langenlois
+  date: 2026-09-19T18:00:00
+  location: Hof Nidetzky, Septemberlese Langenlois
+  link: https://www.kulturlangenlois.at/septemberlese 
 
 - title: Lesung aus „Heim holen“
-  date: 2026-09-12T00:00:00
-  displaytime: (Uhrzeit folgt)
+  date: 2026-09-17T19:30:00
+  location: Buchhandlung im Volkshaus, Zürich
+  description: Lesung und Gespräch gemeinsam mit Elias Hirschl
+  link: https://www.austria.info/de-ch/empfehlungen/feelaustriadays/17-09-2026/
+
+- title: Lesung aus „Heim holen“
+  date: 2026-09-12T15:00:00
   location: Literaturmeile Zieglergasse, Wien
+  link: https://www.literaturmeile.at/
 
 - title: Lesung aus „Heim holen“
-  date: 2026-07-24T00:00:00
-  displaytime: (Uhrzeit folgt)
+  date: 2026-09-06T16:00:00
+  location: Linkes Wort, Volksstimmefest, Wien
+
+- title: Lesung aus „Heim holen“
+  date: 2026-07-24T19:30:00
   location: Festival Literatur & Wiese, Wieselburg
+  link: https://halle2.at/veranstaltungen/literatur-wiese-5
+
+- title: Lesung aus „Heim holen“
+  date: 2026-07-09T20:00:00
+  location: O-Töne Eröffnung, Museumsquartier Wien
+  link: https://o-toene.at/
 
 - title: Lesung aus „Heim holen“
   date: 2026-06-03T00:00:00
